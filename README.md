@@ -8,12 +8,18 @@
 	执行入口：
 	
 		org.lushen.zhuifeng.http.proxy.HttpServerStarter
-	
-	自定义三个组件进行业务接入(代理事务执行器、代理异常处理器、代理过滤器)，已自带默认实现：
+
+#### 接入业务逻辑
+
+	自定义三个组件进行业务接入(代理事务执行器、代理异常处理器、代理过滤器)：
 	
 		org.lushen.zhuifeng.http.proxy.server.HttpProxyExecutor
 		org.lushen.zhuifeng.http.proxy.server.HttpProxyErrorResolver
 		org.lushen.zhuifeng.http.proxy.server.HttpProxyFilter
+	
+	代理事务执行器、代理异常处理器、代理过滤器已有实现：
+	
+		org.lushen.zhuifeng.http.proxy.server.supports.*
 	
 	接入自定义业务，请实现事务执行器和异常处理器，并配置为spring bean.
 	
