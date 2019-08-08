@@ -5,9 +5,13 @@
 	
 #### 快速启动
 
-	执行入口：
+	执行main方法：
 	
 		org.lushen.zhuifeng.http.proxy.HttpServerStarter
+	
+	http访问路径：
+	
+		http://localhost:8080
 
 #### 接入业务逻辑
 
@@ -27,7 +31,7 @@
 	
 	接入示例请查看：org.lushen.zhuifeng.http.proxy.bus.HelloExecutor
 	
-	接入配置示例请查看：application.yml：
+	配置接入和整合示例请查看：application.yml：
 		
 		①，org.lushen.zhuifeng.http.proxy.port=8080
 		②，org.lushen.zhuifeng.http.proxy.acceptors=2
