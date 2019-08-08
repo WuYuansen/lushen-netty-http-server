@@ -1,0 +1,9 @@
+
+# 代理服务器配置
+org.lushen.zhuifeng.http.proxy: 
+  port: 8080
+  acceptors: 2
+  workers: 500
+  white-list-user-agents: 
+  white-list-ips: 
+  allow-methods: POST, GET
